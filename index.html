@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+    <title>Earthquake 3D visualization</title>
+    <link rel="stylesheet" href="https://js.arcgis.com/4.22/esri/css/main.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://js.arcgis.com/4.22/"></script>
+    <script src="./main.js"></script>
+  </head>
+
+  <body>
+    <div id="heropage">
+        <div class="h3">All about Earthquakes</div>
+        <!-- 3D model hosted on sketchfab.com -->
+        <div class="sketchfab-embed-wrapper" style="float: right; clear: right"> <iframe title="Earthquakes - 2000 to 2019" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="1280" height="720" src="https://sketchfab.com/models/894ad84ceb8b444a91fbc05f20530bcd/embed?autostart=1&camera=0&transparent=1&ui_infos=0&ui_watermark=0" align="right"> </iframe> 
+            <div class="h6">
+                <p>Earth is an active place and earthquakes are always happening somewhere. In fact, the National Earthquake Information Center locates about 12,000-14,000 earthquakes each year! On average, Magnitude 2 and smaller earthquakes occur several hundred times a day world wide. Major earthquakes, greater than magnitude 7, happen more than once per month. "Great earthquakes", magnitude 8 and higher, occur about once a year. </p>
+                <p>The 3D Model at right shows the Earthquakes occured from year 2000 to 2019 taken from USGS Earthquake Catalog, showcasing the 11 major ones in a point cloud format. Its viewable in Virtual Reality too.</p>
+                <p>The 3D interactive globe below takes Real-time GeoJSON Feed from USGS showing past month earthquakes occurance segregated according to the magnitude. The histogram is dynamic and range can be set according to ones need.</p>
+                <p>To know more about earthquakes click on link is provided below:</p>
+                <button type="button" class="button" onclick=" window.open('https://education.nationalgeographic.org/resource/resource-library-earthquake','_blank')">
+                    <span class="button__text">KNOW MORE</span>
+                    <span class="button__icon">
+                        <ion-icon name="link-outline"></ion-icon>
+                    </span>
+                  </button>
+                  <!-- Lick icon from ionicon.com -->
+                  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+            </div>
+        </div>
+    </div>
+    <!-- Setting up dynamic histogram -->
+    <div id="viewDiv">
+      <div id="sidePanelInfo">
+        <div id="legend"></div>
+        <div id="histContainer">
+          <div class="title">Magnitude histogram</div>
+          <div id="histogram"></div>
+          <div class="description" id="histCount"></div>
+        </div>
+      </div>
+    </div>
+    <div id="simulation">
+        <!-- Video hosted in youtube -->
+        <div class="video" style="float: right;"> <iframe src="https://www.youtube.com/embed/-Axoi7aW4Is?autoplay=1&mute=1" frameborder="0" allowfullscreen mozallowfullscreen="true" width="1280" height="720"></iframe>
+        </div>
+        <div class="h4">
+            <p>The video shows the rigid body simulation in blender using Bullet Constraints Builder with fracture modifier to collapse Muilti-family house recreating 7.5 richter scale earthquake</p>
+            <p>The assets and blender file required to recreate the simultion along with step-by-step pdf tutorial guide can be accessed from the link below:</p>
+            <button type="button" class="button" onclick=" window.open('https://drive.google.com/drive/folders/19yK-l_flvEnTnqqOlYROZv1GDM9VkEqJ?usp=sharing','_blank')">
+                <span class="button__text">Download Blender 2.79 file + assets</span>
+                <span class="button__icon">
+                    <ion-icon name="link-outline"></ion-icon>
+                </span>
+              </button>
+              <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+        </div>  
+    </div>
+    <footer>
+        <div class="h8" style="position: relative;">Created by Abhishek Rawat |
+        <!-- GITHUB Link of repository of this code -->
+        <a class="social_icon" href="https://github.com/AiM0-create" target="_blank"> 
+            <ion-icon name="logo-github"></ion-icon>
+        </a>
+        </div>
+    </footer>
+  </body>
+</html>

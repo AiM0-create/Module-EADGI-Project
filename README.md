@@ -1,4 +1,4 @@
-# Module-AEGD-Project-All about Earthquakes
+# Module-EADGI-Project-All about Earthquakes
 
 ### Introduction
 

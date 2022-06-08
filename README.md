@@ -28,11 +28,9 @@ Methodology focuses on covering all the stated objectives while also focusing on
 
 The initial/hero page of the website focuses on basic info about earthquakes and showing a 3D model of geolocated point cloud earthquake data which is color coded according to the intensity of the earthquake.
 
-![1654718495166](image/README/1654718495166.png)
+![1654718495166](image/README/1.png)
 
 Sketchfab was used to offload the .ply file generated from the python code "model_VR.py". The benifit of this is that it can be natively viewed in VR view too, provided one needs tools/devices supporting VR. The "KNOW MORE" button is a link to National Geographic Earthquake learning catalog where various articles/blogs/news/reports are there to get an indepth knowledge about earthquakes and the science behind it.
-
-<div class="sketchfab-embed-wrapper" style="float: right; clear: right"> <iframe title="Earthquakes - 2000 to 2019" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="1280" height="720" src="https://sketchfab.com/models/894ad84ceb8b444a91fbc05f20530bcd/embed?autostart=1&camera=0&transparent=1&ui_infos=0&ui_watermark=0" align="right"> </iframe>
 
 This is the -> [link](https://sketchfab.com/models/894ad84ceb8b444a91fbc05f20530bcd/embed?autostart=1&camera=0&transparent=1&ui_infos=0&ui_watermark=0) to the 3D model above.
 
@@ -40,9 +38,9 @@ The next part is to show real time feed via ArcGIS API. The goal is to create a 
 
 | Magnitude  | Description                                                                         | Legend                                         |
 | ---------- | ----------------------------------------------------------------------------------- | ---------------------------------------------- |
-| < 5.0      | They don't cause any significant damage.                                            | ![1654714979481](image/README/1654714979481.png) |
-| 5.0 - 7.0 | They can damage buildings and other structures in populated areas.                  | ![1654714990657](image/README/1654714990657.png) |
-| > 7,0      | These earthquakes are likely to case damage even to earthquake resistant structures | ![1654714999682](image/README/1654714999682.png) |
+| < 5.0      | They don't cause any significant damage.                                            | ![1654714979481](image/README/small_legend.png) |
+| 5.0 - 7.0 | They can damage buildings and other structures in populated areas.                  | ![1654714990657](image/README/medium_legend.png) |
+| > 7,0      | These earthquakes are likely to case damage even to earthquake resistant structures | ![1654714999682](image/README/large_legend.png) |
 
 This is a recreation of an ESRI 3D visualization lesson which can be accessed via the [link](https://www.esri.com/arcgis-blog/products/js-api-arcgis/3d-gis/a-classical-visualization-of-earthquakes-using-arcgis-api-for-javascript/). Basic methodlogy to create this visualization is:
 
@@ -54,17 +52,17 @@ This is a recreation of an ESRI 3D visualization lesson which can be accessed vi
 
 After that the website will look somewhat like this(I have changed the basetilelayer in the code and changed some parameters so the view might look different):
 
-![1654715404056](image/README/1654715404056.png)
+![1654715404056](image/README/2.png)
 
 The final stage is to create a simulation to show how earthquakes affect structures in real life. Due to time and computational limitation, the simulation was only done for one building with limited parameters in blender. One can increase the complexity and poly-count geometries accordingly. The ->[link](https://drive.google.com/drive/folders/19yK-l_flvEnTnqqOlYROZv1GDM9VkEqJ)<- to assets and blender software is given. One can even use different softwares like [Houdini-SideFX](https://www.sidefx.com/gallery/houdini-earthquake-house-collapse-rnd/) and [Unity](https://github.com/ertanturan/Unity-Earthquake-Simulation).
 
-![1654716540705](image/README/1654716540705.png)
+![1654716540705](image/README/3.png)
 
 The simulation was exported and uploaded to youtube for website fetching. Link to the video -> [Simulation.mp4](https://www.youtube.com/embed/-Axoi7aW4Is?autoplay=0&mute=0)
 
 ##### Additonal things
 
-![1654717016693](image/README/1654717016693.png)
+![1654717016693](image/README/button.png)
 
 **Buttons**
 
@@ -124,7 +122,7 @@ css code
 
 For further clarification one can refer the [tutorial](https://www.youtube.com/watch?v=A7G-kAyfxqY&t=49s).
 
-![1654717261623](image/README/1654717261623.png)
+![1654717261623](image/README/footer.png)
 
 **Footer with name and GitHub logo**
 

@@ -1,5 +1,7 @@
 # Module-AEGD-Project-All about Earthquakes
 
+### Introduction
+
 Contains html file showcasing Earthquake related data generated in the form of VR modles, three.js globe with real-time earthquake feed and video of simulation of earthquake generated in blender.
 
 The idea is to create an all inclusive website showcasing earthquakes happening all around the globe and information about it. This project is a part of our module work where the goal was to create:
@@ -7,6 +9,12 @@ The idea is to create an all inclusive website showcasing earthquakes happening 
 * Web based 3D visualization
 * Dynamic Simulation and visualization
 * Application of VR in geospatial domains
+
+| Folder Name  | Details                                                                                                                                                                 | Files                                                                                                               |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| Website Code | Has the main html/css/javascript file for the website                                                                                                                   | index.html, style.css, main.js                                                                                      |
+| VR model     | Contains the python file for generating .ply file of point cloud of earthquake data. Additonally .ply file is also provided for quick viewing in any supported software | model_VR.py, earthquake_2000_2019_VR.ply                                                                            |
+| image        | Contains images used in README.md                                                                                                                                       | 1.png, 2.png, 3.png, button.png, footer.png, large_legend.png, medium_legend.png, small_legend.png, methodology.png |
 
 ### Methodology
 
@@ -22,16 +30,11 @@ The initial/hero page of the website focuses on basic info about earthquakes and
 
 ![1654712893890](image/README/1654712893890.png)
 
-Sketchfab was used to offload the .ply file generated from the python code "model_VR.py". The benifit of this is that it can be natively viewed in VR view too, provided one needs tools/devices supporting VR. The "KNOW MORE" button is a link to National Geographic Earthquake learning catalog where various articles/blogs/news/reports are there to get an indepth knowledge about earthquakes and the science behind it. 
+Sketchfab was used to offload the .ply file generated from the python code "model_VR.py". The benifit of this is that it can be natively viewed in VR view too, provided one needs tools/devices supporting VR. The "KNOW MORE" button is a link to National Geographic Earthquake learning catalog where various articles/blogs/news/reports are there to get an indepth knowledge about earthquakes and the science behind it.
 
-<div class="sketchfab-embed-wrapper" style="float: right; clear: right"> <iframe title="Earthquakes - 2000 to 2019" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="1280" height="720" src="https://sketchfab.com/models/894ad84ceb8b444a91fbc05f20530bcd/embed?autostart=1&camera=0&transparent=1&ui_infos=0&ui_watermark=0" align="right"> </iframe> 
+<div class="sketchfab-embed-wrapper" style="float: right; clear: right"> <iframe title="Earthquakes - 2000 to 2019" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="1280" height="720" src="https://sketchfab.com/models/894ad84ceb8b444a91fbc05f20530bcd/embed?autostart=1&camera=0&transparent=1&ui_infos=0&ui_watermark=0" align="right"> </iframe>
 
-Below is the interactive part to show the features it shows. One can replicate this by cloning model_VR.py and parameters can be altered accordingly.
-
-```
-<div class="sketchfab-embed-wrapper" style="float: right; clear: right"> <iframe title="Earthquakes - 2000 to 2019" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="1280" height="720" src="https://sketchfab.com/models/894ad84ceb8b444a91fbc05f20530bcd/embed?autostart=1&camera=0&transparent=1&ui_infos=0&ui_watermark=0" align="right"> </iframe> 
-
-```
+This is the -> [link](https://sketchfab.com/models/894ad84ceb8b444a91fbc05f20530bcd/embed?autostart=1&camera=0&transparent=1&ui_infos=0&ui_watermark=0) to the 3D model above.
 
 The next part is to show real time feed via ArcGIS API. The goal is to create a modular globe view with changing labels according to the range of magnitude of earthquakes:
 
@@ -53,21 +56,96 @@ After that the website will look somewhat like this(I have changed the basetilel
 
 ![1654715404056](image/README/1654715404056.png)
 
-Below you can play with the interactive map.
+The final stage is to create a simulation to show how earthquakes affect structures in real life. Due to time and computational limitation, the simulation was only done for one building with limited parameters in blender. One can increase the complexity and poly-count geometries accordingly. The ->[link](https://drive.google.com/drive/folders/19yK-l_flvEnTnqqOlYROZv1GDM9VkEqJ)<- to assets and blender software is given. One can even use different softwares like [Houdini-SideFX](https://www.sidefx.com/gallery/houdini-earthquake-house-collapse-rnd/) and [Unity](https://github.com/ertanturan/Unity-Earthquake-Simulation).
+
+![1654716540705](image/README/1654716540705.png)
+
+The simulation was exported and uploaded to youtube for website fetching. Link to the video -> [Simulation.mp4](https://www.youtube.com/embed/-Axoi7aW4Is?autoplay=0&mute=0)
+
+##### Additonal things
+
+![1654717016693](image/README/1654717016693.png)
+
+**Buttons**
+
+They were used for linking different wbsites and url. The code framework of which is shown below:
+
+html code
 
 ```
-<!-- Setting up dynamic histogram -->
-    <div id="viewDiv">
-      <div id="sidePanelInfo">
-        <div id="legend"></div>
-        <div id="histContainer">
-          <div class="title">Magnitude histogram</div>
-          <div id="histogram"></div>
-          <div class="description" id="histCount"></div>
+<button type="button" class="button" onclick=" window.open('https://drive.google.com/drive/folders/19yK-l_flvEnTnqqOlYROZv1GDM9VkEqJ?usp=sharing','_blank')">
+                <span class="button__text">Download Blender 2.79 file + assets</span>
+                <span class="button__icon">
+                    <ion-icon name="link-outline"></ion-icon>
+                </span>
+            </button>
+```
+
+css code
+
+```
+.button {
+    display: flex;
+    height: 50px;
+    padding: 0;
+    background: #009578;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background: #008168;
+  }
+  
+  .button:active {
+    background: #006e58;
+  }
+  
+  .button__text,
+  .button__icon {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 24px;
+    color: #fff;
+    height: 100%;
+  }
+  
+  .button__icon {
+    font-size: 1.5em;
+    background: rgba(0, 0, 0, 0.08);
+  }
+```
+
+For further clarification one can refer the [tutorial](https://www.youtube.com/watch?v=A7G-kAyfxqY&t=49s).
+
+![1654717261623](image/README/1654717261623.png)
+
+**Footer with name and GitHub logo**
+
+Created using footer functionality and the same [tutorial](https://www.youtube.com/watch?v=A7G-kAyfxqY&t=49s) mentioned above. Below is the code snippet:
+
+```
+<footer>
+        <div class="h8" style="position: relative;">Created by Abhishek Rawat |
+        <!-- GITHUB Link of repository of this code -->
+        <a class="social_icon" href="https://github.com/AiM0-create/Module-AEGD-Project" target="_blank"> 
+            <ion-icon name="logo-github"></ion-icon>
+        </a>
         </div>
-      </div>
+    </footer>
 ```
 
-The final stage is to create a simulation to show
+### Conclusion
+
+The project has lot of scope of improvement so if you want to collab, raise issue with the code or even reuse the code feel free to do so.
+
+Contact: [LinkedIn](https://www.linkedin.com/in/abhishek-rawat-9795a914a/) 
+
 
 ---

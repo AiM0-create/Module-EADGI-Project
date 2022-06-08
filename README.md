@@ -20,7 +20,7 @@ The idea is to create an all inclusive website showcasing earthquakes happening 
 
 The methodology followed for the project can be viewed below:
 
-![1654712191919](image/README/1654712191919.png)
+![1654712191919](image/README/methodology.png)
 
 Methodology focuses on covering all the stated objectives while also focusing on achieving the goal of educating and gaining knwoledge about earthquakes more!
 

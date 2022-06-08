@@ -28,7 +28,7 @@ Methodology focuses on covering all the stated objectives while also focusing on
 
 The initial/hero page of the website focuses on basic info about earthquakes and showing a 3D model of geolocated point cloud earthquake data which is color coded according to the intensity of the earthquake.
 
-![1654712893890](image/README/1654712893890.png)
+![1654718495166](image/README/1654718495166.png)
 
 Sketchfab was used to offload the .ply file generated from the python code "model_VR.py". The benifit of this is that it can be natively viewed in VR view too, provided one needs tools/devices supporting VR. The "KNOW MORE" button is a link to National Geographic Earthquake learning catalog where various articles/blogs/news/reports are there to get an indepth knowledge about earthquakes and the science behind it.
 

@@ -14,7 +14,7 @@ The idea is to create an all inclusive website showcasing earthquakes happening 
 | ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
 | Website Code | Has the main html/css/javascript file for the website                                                                                                                   | index.html, style.css, main.js                                                                                      |
 | VR model     | Contains the python file for generating .ply file of point cloud of earthquake data. Additonally .ply file is also provided for quick viewing in any supported software | model_VR.py, earthquake_2000_2019_VR.ply                                                                            |
-| image        | Contains images used in README.md                                                                                                                                       | 1.png, 2.png, 3.png, button.png, footer.png, large_legend.png, medium_legend.png, small_legend.png, methodology.png |
+| image/README | Contains images used in README.md                                                                                                                                       | 1.png, 2.png, 3.png, button.png, footer.png, large_legend.png, medium_legend.png, small_legend.png, methodology.png |
 
 ### Methodology
 
@@ -145,7 +145,6 @@ Created using footer functionality and the same [tutorial](https://www.youtube.c
 
 The project has lot of scope of improvement so if you want to collab, raise issue with the code or even reuse the code feel free to do so.
 
-Contact: [LinkedIn](https://www.linkedin.com/in/abhishek-rawat-9795a914a/) 
-
+Contact: [LinkedIn](https://www.linkedin.com/in/abhishek-rawat-9795a914a/)
 
 ---

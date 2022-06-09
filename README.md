@@ -40,7 +40,7 @@ The next part is to show real time feed via ArcGIS API. The goal is to create a 
 | ---------- | ------------------------------------------------------------------------------------ | ---------------------------------------------- |
 | < 5.0      | They don't cause any significant damage.                                             | ![1654714979481](image/README/small_legend.png)  |
 | 5.0 - 7.0 | They can damage buildings and other structures in populated areas.                   | ![1654714990657](image/README/medium_legend.png) |
-| > 7,0      | These earthquakes are likely to cause damage even to earthquake resistant structures | ![1654714999682](image/README/large_legend.png)  |
+| > 7.0      | These earthquakes are likely to cause damage even to earthquake resistant structures | ![1654714999682](image/README/large_legend.png)  |
 
 This is a recreation of an ESRI 3D visualization lesson which can be accessed via the [link](https://www.esri.com/arcgis-blog/products/js-api-arcgis/3d-gis/a-classical-visualization-of-earthquakes-using-arcgis-api-for-javascript/). Basic methodology to create this visualization is:
 

@@ -139,6 +139,25 @@ Created using footer functionality and the same [tutorial](https://www.youtube.c
     </footer>
 ```
 
+### References
+
+1. A classical visualization of earthquakes using ArcGIS API for
+   JavaScript. (n.d.). Retrieved June 9, 2022, from
+   https://www.esri.com/arcgis-blog/products/js-api-arcgis/3d-gis/a-classical-visualization-of-earthquakes-using-arcgis-api-for-javascript/
+2. API Documentation - Earthquake Catalog. (n.d.). Retrieved
+   June 9, 2022, from https://earthquake.usgs.gov/fdsnws/event/1/
+3. Blender Fracture Modifier – Simply Explained | All3DP.
+   (n.d.). Retrieved June 9, 2022, from
+   https://all3dp.com/2/blender-fracture-modifier/
+4. GeoJSON Summary Format. (n.d.). Retrieved June 9, 2022, from
+   https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php
+5. GitHub - KaiKostack/bullet-constraints-builder: Add-on for
+   Blender to connect rigid bodies via constraints in a physical plausible way.
+   (You only need the ZIP file for installation in Blender. Click the filename and
+   at the next page “Download”, right click and “Save As” won’t work!). (n.d.).
+   Retrieved June 9, 2022, from
+   https://github.com/KaiKostack/bullet-constraints-builder
+
 ### Conclusion
 
 The project has lot of scope of improvement so if you want to collab, raise issue with the code or even reuse the code feel free to do so.

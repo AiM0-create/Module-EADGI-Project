@@ -2,7 +2,7 @@
 
 ### Introduction
 
-Contains html file showcasing Earthquake related data generated in the form of VR modles, three.js globe with real-time earthquake feed and video of simulation of earthquake generated in blender.
+Contains html file showcasing Earthquake related data generated in the form of VR model, ArcGIS API with real-time earthquake feed and video of simulation of  earthquake generated in blender.
 
 The idea is to create an all inclusive website showcasing earthquakes happening all around the globe and information about it. This project is a part of our module work where the goal was to create:
 
@@ -22,7 +22,7 @@ The methodology followed for the project can be viewed below:
 
 ![1654712191919](image/README/methodology.png)
 
-Methodology focuses on covering all the stated objectives while also focusing on achieving the goal of educating and gaining knwoledge about earthquakes more!
+Methodology focuses on covering all the stated objectives while also focusing on achieving the goal of educating and gaining knowledge about earthquakes more!
 
 ### Description
 
@@ -30,19 +30,19 @@ The initial/hero page of the website focuses on basic info about earthquakes and
 
 ![1654718495166](image/README/1.png)
 
-Sketchfab was used to offload the .ply file generated from the python code "model_VR.py". The benifit of this is that it can be natively viewed in VR view too, provided one needs tools/devices supporting VR. The "KNOW MORE" button is a link to National Geographic Earthquake learning catalog where various articles/blogs/news/reports are there to get an indepth knowledge about earthquakes and the science behind it.
+Sketchfab was used to offload the .ply file generated from the python code "model_VR.py". The benefit of this is that it can be natively viewed in VR view too, provided one needs tools/devices supporting VR. The "KNOW MORE" button is a link to National Geographic Earthquake learning catalogue where various articles/blogs/news/reports are there to get an in-depth knowledge about earthquakes and the science behind it.
 
 This is the -> [link](https://sketchfab.com/models/894ad84ceb8b444a91fbc05f20530bcd/embed?autostart=1&camera=0&transparent=1&ui_infos=0&ui_watermark=0) to the 3D model above.
 
 The next part is to show real time feed via ArcGIS API. The goal is to create a modular globe view with changing labels according to the range of magnitude of earthquakes:
 
-| Magnitude  | Description                                                                         | Legend                                         |
-| ---------- | ----------------------------------------------------------------------------------- | ---------------------------------------------- |
-| < 5.0      | They don't cause any significant damage.                                            | ![1654714979481](image/README/small_legend.png) |
-| 5.0 - 7.0 | They can damage buildings and other structures in populated areas.                  | ![1654714990657](image/README/medium_legend.png) |
-| > 7,0      | These earthquakes are likely to case damage even to earthquake resistant structures | ![1654714999682](image/README/large_legend.png) |
+| Magnitude  | Description                                                                          | Legend                                         |
+| ---------- | ------------------------------------------------------------------------------------ | ---------------------------------------------- |
+| < 5.0      | They don't cause any significant damage.                                             | ![1654714979481](image/README/small_legend.png)  |
+| 5.0 - 7.0 | They can damage buildings and other structures in populated areas.                   | ![1654714990657](image/README/medium_legend.png) |
+| > 7,0      | These earthquakes are likely to cause damage even to earthquake resistant structures | ![1654714999682](image/README/large_legend.png)  |
 
-This is a recreation of an ESRI 3D visualization lesson which can be accessed via the [link](https://www.esri.com/arcgis-blog/products/js-api-arcgis/3d-gis/a-classical-visualization-of-earthquakes-using-arcgis-api-for-javascript/). Basic methodlogy to create this visualization is:
+This is a recreation of an ESRI 3D visualization lesson which can be accessed via the [link](https://www.esri.com/arcgis-blog/products/js-api-arcgis/3d-gis/a-classical-visualization-of-earthquakes-using-arcgis-api-for-javascript/). Basic methodology to create this visualization is:
 
 * Create the map: contains the vintage basemap from John Nelson loaded as a TileLayer. See the code for this on [Github](https://github.com/RalucaNicola/JSAPI_demos/blob/master/last-earthquakes/main.js#L18) (lines 18–28).
 * Create the [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html) that the map will be rendered to. On the [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html) there are several properties related to the user interaction, like the [navigation constraints](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints), the color of the [highlight](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#highlightOptions) when the user clicks on an earthquake, the [environment settings](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment) for the lighting in the scene and removing the stars and the sky and making it transparent. See the code for this on [Github](https://github.com/RalucaNicola/JSAPI_demos/blob/master/last-earthquakes/main.js#L30) (lines 30–60).
@@ -54,19 +54,19 @@ After that the website will look somewhat like this(I have changed the basetilel
 
 ![1654715404056](image/README/2.png)
 
-The final stage is to create a simulation to show how earthquakes affect structures in real life. Due to time and computational limitation, the simulation was only done for one building with limited parameters in blender. One can increase the complexity and poly-count geometries accordingly. The ->[link](https://drive.google.com/drive/folders/19yK-l_flvEnTnqqOlYROZv1GDM9VkEqJ)<- to assets and blender software is given. One can even use different softwares like [Houdini-SideFX](https://www.sidefx.com/gallery/houdini-earthquake-house-collapse-rnd/) and [Unity](https://github.com/ertanturan/Unity-Earthquake-Simulation).
+The final stage is to create a simulation to show how earthquakes affect structures in real life. Due to time and computational limitation, the simulation was only done for one building with limited parameters in blender. One can increase the complexity and poly-count geometries accordingly. The ->[link](https://drive.google.com/drive/folders/19yK-l_flvEnTnqqOlYROZv1GDM9VkEqJ)<- to assets and blender software is given. One can even use different software's like [Houdini-SideFX](https://www.sidefx.com/gallery/houdini-earthquake-house-collapse-rnd/) and [Unity](https://github.com/ertanturan/Unity-Earthquake-Simulation).
 
 ![1654716540705](image/README/3.png)
 
-The simulation was exported and uploaded to youtube for website fetching. Link to the video -> [Simulation.mp4](https://www.youtube.com/embed/-Axoi7aW4Is?autoplay=0&mute=0)
+The simulation was exported and uploaded to YouTube for website fetching. Link to the video -> [Simulation.mp4](https://www.youtube.com/embed/-Axoi7aW4Is?autoplay=0&mute=0)
 
-##### Additonal things
+##### Additional things
 
 ![1654717016693](image/README/button.png)
 
 **Buttons**
 
-They were used for linking different wbsites and url. The code framework of which is shown below:
+They were used for linking different wbsites and url. This was used for off-loading assets for simualation. The code framework of which is shown below:
 
 html code
 
